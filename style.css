@@ -1,0 +1,164 @@
+/* ===== Reset & Font ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #343f1c;
+  color: #fff;
+}
+
+/* ===== Header ===== */
+header {
+  background: #343f1c;
+  padding: 20px 0;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+header .logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00ffc6;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  color: #00ffc6;
+}
+.btn-login {
+  border: 1px solid #00ffc6;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #1f1f2e, #343f1c);
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #00ffc6;
+}
+.hero p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+.hero .btn {
+  background: #00ffc6;
+  color: #343f1c;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.hero .btn:hover {
+  background: #00e0b0;
+}
+
+/* ===== Top-Up Section ===== */
+.topup-section {
+  padding: 80px 20px;
+  background: #343f1c;
+  text-align: center;
+}
+.topup-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #00ffc6;
+}
+.game-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.card {
+  background: #1a1a2e;
+  width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(204, 50, 12, 0.2);
+  transition: 0.3s;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card h3 {
+  margin: 15px 0;
+}
+.card .btn {
+  display: inline-block;
+  margin-bottom: 15px;
+  background: #00ffc6;
+  color: #343f1c;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(204, 50, 12, 0.2);
+}
+
+/* ===== Promo Section ===== */
+.promo-section {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #1a1a2e, #0f0f1a);
+}
+.promo-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00ffc6;
+}
+.promo-section p {
+  color: #ccc;
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: #343f1c;
+  padding: 20px 0;
+  text-align: center;
+  color: #888;
+}
+
+/* ===== Responsive ===== */
+@media(max-width: 768px){
+  .game-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
